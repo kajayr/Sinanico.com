@@ -1,0 +1,32 @@
+/* main.style.backgroundImage = "url(./img/filterpress/header.jpg)";
+main.style.backgroundPosition = 'center center';
+main.style.backgroundRepeat = "no-repeat";
+main.style.backgroundSize = "cover";
+main.style.transition = 'all .5s' */
+
+.filterpress{
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+animation-name: animate;
+animation-duration: .5s;
+animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+    0%{
+        background-color: white;
+    }
+    20%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        background-image: url('./img/filterpress/header.jpg');
+    }
+}
+
+

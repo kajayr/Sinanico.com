@@ -1,0 +1,74 @@
+/* <div class="nav">
+    <div class="logo"><h1>SinaniCo</h1></div>
+    <div class="header-dec"><h2>Sinani Products</h2></div>
+    <div class="search"><h3>Search: </h3></div> */
+
+.nav{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    position: relative;
+}
+
+.logo{
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    cursor: default;
+}
+
+.header-dec{
+    display: grid;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.ulTop{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.navList{
+    width: 10vw;
+    margin-left: 1%;
+    list-style: none;
+    padding-left: 5px;
+    cursor: pointer;
+    font-family: 'Khand', sans-serif;
+}
+.navList:hover{
+    border-left: 1px solid white;
+    border-left-style: hidden;
+
+    animation-name:bord;
+    animation-duration: .5s;
+}
+@keyframes bord{
+    0%{
+        border-left-style: hidden;
+       
+    }
+    25%{
+        border-left-style: solid;
+       
+    }
+    50%{
+        border-left-style: hidden;
+       
+    }
+    75%{
+        border-left-style: solid;
+       
+    }
+    100%{
+        border-left-style: hidden;
+    }
+}
+
+.search{
+    grid-column: 5/ span 2;
+    display: inline;
+    justify-self: center;
+    align-self: center;
+}

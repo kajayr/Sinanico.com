@@ -1,0 +1,59 @@
+.img{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.img-box{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15vh;
+    width: 15vw;
+    margin:.3rem;
+    border: 1px solid gray;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.img-box:hover{
+   
+    animation-name: box;
+    animation-duration: .5s;
+}
+
+@keyframes box{
+    0%{
+
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-3px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+#img-box1{
+}
+
+#img-box2{
+
+}
+
+#img-box3{
+}
+
+#img-box4{
+
+}
+
+#img-box5{
+
+}
+
+#img-box6{
+
+}

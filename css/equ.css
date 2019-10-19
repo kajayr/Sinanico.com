@@ -1,0 +1,59 @@
+#equ{
+    background-color: white;
+    color: darkblue;
+    opacity: .7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr;
+    grid-column: 3;
+    grid-row:  2;
+    transition: all .3s;
+}
+
+#equ:hover{
+    height: 20vh;
+    background-color: darkblue;
+    color: white;
+    opacity: .7;
+    transition: all .3s;
+}
+
+#equList{
+    list-style: none;
+    margin-top: 5%;
+    animation-name: equList;
+    animation-duration: .5s;
+}
+@keyframes equList{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.list{
+    padding: 1%;
+}
+
+#equButtonText{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-column: auto;
+    justify-self: center;
+    align-self: center;
+    opacity: 1;
+
+    transition: all .5s;
+}
+
+#equsText{
+    display: none;
+}
+
+.equBackground{
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

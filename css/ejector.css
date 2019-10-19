@@ -1,0 +1,59 @@
+#ejector{
+    background-color: white;
+    color: darkblue;
+    opacity: .7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr;
+    grid-column: 4;
+    grid-row:  2;
+    transition: all .3s;
+}
+
+#ejector:hover{
+    height: 20vh;
+    background-color: darkblue;
+    color: white;
+    opacity: .7;
+    transition: all .3s;
+}
+
+#ejectorList{
+    list-style: none;
+    margin-top: 5%;
+    animation-name: equList;
+    animation-duration: .5s;
+}
+@keyframes ejectorList{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.list{
+    padding: 1%;
+}
+
+#ejectorButtonText{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-column: auto;
+    justify-self: center;
+    align-self: center;
+    opacity: 1;
+
+    transition: all .5s;
+}
+
+#ejectorText{
+    display: none;
+}
+
+.ejectorBackground{
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

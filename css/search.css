@@ -1,0 +1,167 @@
+
+#pop-up-valve{
+    position: absolute;
+    left:50%;
+    top:50%;
+    display: none;
+    height: 80vh;
+    width: 80vw;
+    color: white;
+    border-radius: 5px;
+
+    background-color: gray;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    animation-name: pop-up;
+    animation-duration: 1s;
+}
+
+@keyframes pop-up{
+    0%{
+        background-color: white;;
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+#pop-up-ejector
+{
+    position: absolute;
+    left:50%;
+    top:50%;
+    display: none;
+    height: 80vh;
+    width: 80vw;
+    color: white;
+    border-radius: 5px;
+
+    background-color: gray;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    animation-name: pop-up;
+    animation-duration: 1s;
+}
+
+#pop-up-equ{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    height: 80vh;
+    width: 80vw;
+    color: white;
+    border-radius: 5px;
+
+    background-color: gray;
+    z-index: 1;
+
+    transform: translate(-50%, -50%);
+    animation-name: pop-up;
+    animation-duration: 1s;
+}
+
+#pop-up-fitting{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    height: 80vh;
+    width: 80vw;
+    color: white;
+    border-radius: 5px;
+
+    background-color: gray;
+    z-index: 1;
+
+    transform: translate(-50%, -50%);
+    animation-name: pop-up;
+    animation-duration: 1s;
+}
+#x{
+    color:white;
+    background-color: black;
+    border-radius: 50%;
+    border: 0px;
+    height: 5vh;
+    width: 3vw;
+    margin-left: 1%;
+    cursor: pointer;
+
+    transition: all .5s;
+}
+#x:hover{
+ background-color: darkred;
+ box-shadow:white;
+
+ transition: all .5s;
+}
+.close-button{
+    text-align: right;
+    margin: 1%;
+    cursor: default;
+}
+
+.search-img-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.search-img{
+    max-height: 20vh;
+    max-width: 20vw;
+    border: 1px solid white;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 5%;
+}
+
+.notFound{
+
+    display: none;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: darkred;
+    text-align: center;
+   width: 20vw;
+
+}
+
+.search{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.search-text{
+    display: inline;
+    text-align: center;
+}
+
+.fa-search{
+    margin-right: 1%;
+    display: none;
+    justify-self: self-end;
+}
+
+#search-box{
+    text-transform: lowercase;
+    width: 15vw;
+    display: inline-block;
+}
+
+#search-btn{
+    background-color: gray;
+    border: none;
+    color: white;
+    width: 5vw;
+    font-family: 'Khand', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+   }

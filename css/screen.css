@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: linear-gradient(#3c4245, #5f6769 );
+}
+h2{
+    font-family: 'Amaranth', sans-serif;
+}
+
+h1{
+    font-family: 'Audiowide', cursive;
+}
+h3{
+    font-family: 'Khand', sans-serif;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr 1fr;
+    height: 70vh;
+    grid-gap: .5vw;
+    border-bottom: gray .5px solid;
+}
+
+.mainSection{
+    
+    border: 1px solid black;
+    height: 15vh;
+    justify-self: stretch;
+    align-self: center;
+}
+
+#desc{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    justify-self: stretch;
+    align-self: center;
+    grid-column: 6/ span 2;
+    grid-row: 1/ span 2;
+    opacity: .7;
+}
+
+#contact{
+    margin:1%;
+    display:'block';
+
+    animation-name: contact;
+    animation-duration: .5s;
+}
+
+@keyframes contact{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.descDetails{
+    margin: 1%;
+    animation-name: descDetails;
+    animation-duration: .5s;
+}
+
+@keyframes descDetails{
+    0%{
+        opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+
+.nav{
+    background-image: linear-gradient(#3c4245, #5f6769 );
+    color:white;
+    text-shadow: white;
+    border-bottom: 1px gray solid;
+}
+
+.designer{
+    color:white;
+    text-align: center;
+    cursor: default;
+}
+.leo{
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.designer:hover{
+ color: darksalmon;
+ cursor: pointer;
+
+}
+.footer{
+    background-color: #3c4245;
+}
+.close-btn{
+    font-family: 'Khand', sans-serif;
+}

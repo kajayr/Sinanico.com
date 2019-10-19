@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/screen.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/imagesOnScreen.css">
+    <link rel="stylesheet" href="./css/valves.css">
+    <link rel="stylesheet" href="./css/equ.css">
+    <link rel="stylesheet" href="./css/ejector.css">
+    <link rel="stylesheet" href="./css/fittings.css">
+    <link rel="stylesheet" href="./css/imgBoxes.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Audiowide|Khand&display=swap" rel="stylesheet">
+    <title>SinaniCo</title>
+</head>
+<body>
+    <div id="pop-up-valve">
+    <div class="close-button"><span class="close-btn">Close</span><button onclick="closeSearch()" id="x">X</button></div>
+    <div class="search-img-box">
+<img  class="search-img" src="./img/valve/ball_valve.jpg" alt="valve">
+<img class="search-img" src="./img/valve/butterfly_valve.jpg" alt="valve">
+<img class="search-img" src="./img/valve/check_valve.jpg" alt="valve">
+<img class="search-img" src="./img/valve/check_valve2.jpg" alt="valve">
+<img class="search-img" src="./img/valve/safety_valve.jpg" alt="valve">
+    </div>
+    </div>
+
+    <div id="pop-up-equ">
+            <div class="close-button"><span class="close-btn">Close</span><button onclick="closeSearch()" id="x">X</button></div>
+            <div class="search-img-box">
+        <img class="search-img" src="./img/filterpress/filterpress1.jpg" alt="filterpress">
+        <img class="search-img" src="./img/filterpress/mixer1.jpg" alt="filterpress">
+        <img class="search-img" src="./img/filterpress/scraper1.jpg" alt="filterpress">
+        <img class="search-img" src="./img/filterpress/filterpress2.jpg" alt="filterpress">
+            </div>
+            </div>
+    
+            <div id="pop-up-ejector">
+                    <div class="close-button"><span class="close-btn">Close</span><button onclick="closeSearch()" id="x">X</button></div>
+                    <div class="search-img-box">
+                <img class="search-img" src="./img/ejector/header.jpg" alt="filterpress">
+                <img class="search-img" src="./img/ejector/ejector1.jpg" alt="filterpress">
+                <img class="search-img" src="./img/ejector/ejector2.jpg" alt="filterpress">
+                <img class="search-img" src="./img/ejector/ejector3.jpg" alt="filterpress">
+                    </div>
+                    </div>
+
+<div id="pop-up-fitting">
+<div class="close-button"><span class="close-btn">Close</span><button onclick="closeSearch()" id="x">X</button></div>
+    <div class="search-img-box">
+             <img class="search-img" src="./img/fitting/header.jpg" alt="fitting">
+             <img class="search-img" src="./img/fitting/fitting1.jpg" alt="fitting">
+
+            </div>
+     </div>
+    <div class="nav">
+    <div class="logo"><h1>SinaniCo</h1></div>
+    <!-- <div class="header-dec"><ul class="ulTop"><li class="navList">Products</li><li class="navList">About us</li></ul></div> -->
+    <div class="search">
+            <i onclick="searchOnPhone()" class="fa fa-search"></i><h3 id="search-text">Search </h3><input autocomplete="off" id="search-box" type="text" placeholder="valve, filterpress">
+            <button id="search-btn" onclick="searching()">Go</button>
+    </div>
+    <div class="notFound" id="notFound"></div>
+    </div>
+    <div class="main" id="main">
+    <button onclick="selectingValve()" onmouseover="goValve()" onmouseleave="dropValveText()" class="mainSection" id="valves" value="valves"><div id="valveButtonText"><h2>Valves</h2></div></button>
+    <button onclick="selectingEqu()" onmouseover="goEqu()" onmouseleave="dropEquText()" class="mainSection" id="equ" value="equ"><div id="equButtonText"><h2>Equepments</h2></div></button>
+    <button onclick="selectingEjector()" onmouseover="goejector()" onmouseleave="dropejectorText()" class="mainSection" id="ejector"><div id="ejectorButtonText"><h2>Ejector</h2></div></button>
+    <button onclick="selectingFitting()" onmouseover="gofitting()" onmouseleave="dropfittingText()" class="mainSection" id="fitting"><div id="fittingButtonText"><h2>Fitting</h2></div></button>
+    <div class="desc" id="desc"><div id="contact">
+        <h4>Contact Information:</h4><hr><p><span>Phone: </span>+21 88403394</p><p><span>Email: </span>contact@Sinanico.com</p>
+    </div></div>
+    </div>
+    <div class="img">
+    <div class="img-box" id="img-box1"></div>
+    <div class="img-box" id="img-box2"></div>
+    <div class="img-box" id="img-box3"></div>
+    <div class="img-box" id="img-box4"></div>
+    <div class="img-box" id="img-box5"></div>
+    <div class="img-box" id="img-box6"></div>
+    </div>
+    <div class='footer'>
+        <p class="leo"><a class="designer" href="https://leosinani.herokuapp.com">Designed By Leo Sinani</a></p>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/equ.js"></script>
+    <script src="./js/ejector.js"></script>
+    <script src="./js/fittings.js"></script>
+    <script src="./js/imageBoxes.js"></script>
+</body>
+</html>
